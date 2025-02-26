@@ -1,0 +1,36 @@
+nohup: ignoring input
+Processing folder: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/gemma-2-9b-it
+2025-02-07 10:18:21.384103: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1738919901.403488 3170408 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1738919901.409322 3170408 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-07 10:18:21.423547: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:02,  1.48s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.29s/it]
+processing file: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/gemma-2-9b-it/article_titles.xlsx
+📊 Initial Data Preview:
+                                               Title  ... prompt_combo_5
+0                     The life of an Occupy activist  ...            NaN
+1                     How to focus in a manic market  ...            NaN
+2  Chicago Walk Now for Autism Speaks Welcomed 15...  ...            NaN
+3  Why Narendra Modi's Landslide Victory Is Good ...  ...            NaN
+4  PerkinElmer Expands its Cellular Pathway and B...  ...            NaN
+
+[5 rows x 6 columns]
+✅ Updated file saved: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/gemma-2-9b-it/article_titles.xlsx
+
+✅ Final Processed Data:
+                                                  Title  ... prompt_combo_5
+0                        The life of an Occupy activist  ...            NaN
+1                        How to focus in a manic market  ...            NaN
+2     Chicago Walk Now for Autism Speaks Welcomed 15...  ...            NaN
+3     Why Narendra Modi's Landslide Victory Is Good ...  ...            NaN
+4     PerkinElmer Expands its Cellular Pathway and B...  ...            NaN
+...                                                 ...  ...            ...
+1043  National Report: New Jersey Ranks 43rd in Prot...  ...            NaN
+1044  Investors Call Trump's Plans into Question: 5 ...  ...            NaN
+1045  California Considers Drug Penalty Changes as U...  ...            NaN
+1046  EU to require share of tax ruling data in tax ...  ...            NaN
+1047  UPDATE 4-Fire put out on Russian nuclear subma...  ...            NaN
+
+[1048 rows x 6 columns]

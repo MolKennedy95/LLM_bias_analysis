@@ -1,0 +1,27 @@
+nohup: ignoring input
+Processing folder: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/llama_3.1_8B
+Traceback (most recent call last):
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'google/gemma-2-9b-it '.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nfs/datb/molly/LLM_bias_analysis/LLM_article_preference_generation/llama_preference_2.py", line 185, in <module>
+    main()
+  File "/nfs/datb/molly/LLM_bias_analysis/LLM_article_preference_generation/llama_preference_2.py", line 176, in main
+    c4ai_output_single_file(
+  File "/nfs/datb/molly/LLM_bias_analysis/LLM_article_preference_generation/llama_preference_2.py", line 29, in c4ai_output_single_file
+    tokenizer = AutoTokenizer.from_pretrained(model_name, token=hf_token, trust_remote_code=True)
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 871, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 703, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/mounts/Users/cisintern/molly/miniconda3/envs/media_bias/lib/python3.10/site-packages/transformers/utils/hub.py", line 469, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: 'google/gemma-2-9b-it '. Please provide either the path to a local folder or the repo_id of a model on the Hub.

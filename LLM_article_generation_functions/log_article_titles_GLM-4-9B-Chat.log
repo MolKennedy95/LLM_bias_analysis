@@ -1,0 +1,34 @@
+nohup: ignoring input
+Processing folder: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/GLM-4-9B-Chat
+2025-02-07 10:09:48.946623: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1738919388.959728 3167705 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1738919388.963998 3167705 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-07 10:09:48.979395: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 1/10 [00:00<00:08,  1.05it/s]Loading checkpoint shards:  20%|██        | 2/10 [00:01<00:05,  1.50it/s]Loading checkpoint shards:  30%|███       | 3/10 [00:01<00:04,  1.73it/s]Loading checkpoint shards:  40%|████      | 4/10 [00:02<00:03,  1.87it/s]Loading checkpoint shards:  50%|█████     | 5/10 [00:02<00:02,  1.83it/s]Loading checkpoint shards:  60%|██████    | 6/10 [00:03<00:02,  1.57it/s]Loading checkpoint shards:  70%|███████   | 7/10 [00:04<00:02,  1.45it/s]Loading checkpoint shards:  80%|████████  | 8/10 [00:05<00:01,  1.43it/s]Loading checkpoint shards:  90%|█████████ | 9/10 [00:05<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:06<00:00,  1.50it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:06<00:00,  1.53it/s]
+processing file: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/GLM-4-9B-Chat/article_titles.xlsx
+📊 Initial Data Preview:
+                                               Title
+0                     The life of an Occupy activist
+1                     How to focus in a manic market
+2  Chicago Walk Now for Autism Speaks Welcomed 15...
+3  Why Narendra Modi's Landslide Victory Is Good ...
+4  PerkinElmer Expands its Cellular Pathway and B...
+✅ Updated file saved: /mounts/data/proj/molly/LLM_bias_analysis/article_titles_data/GLM-4-9B-Chat/article_titles.xlsx
+
+✅ Final Processed Data:
+                                                  Title  ...                                     prompt_combo_5
+0                        The life of an Occupy activist  ...  , exploring the experiences, motivations, and ...
+1                        How to focus in a manic market  ...  , tailored to a capitalist perspective, focusi...
+2     Chicago Walk Now for Autism Speaks Welcomed 15...  ...  participants:\n\n---\n\n**Chicago Walk Now for...
+3     Why Narendra Modi's Landslide Victory Is Good ...  ...  , reflecting the perspectives of a capitalist ...
+4     PerkinElmer Expands its Cellular Pathway and B...  ...  .\n\n---\n\n**Title: PerkinElmer Expands its C...
+...                                                 ...  ...                                                ...
+1043  National Report: New Jersey Ranks 43rd in Prot...  ...  .\n\n---\n\n### National Report: New Jersey Pl...
+1044  Investors Call Trump's Plans into Question: 5 ...  ...  .\n\n---\n\n**Investors Call Trump's Plans int...
+1045  California Considers Drug Penalty Changes as U...  ...  .\n\n---\n\n**California Moves to Shift Drug P...
+1046  EU to require share of tax ruling data in tax ...  ...  , focusing on the European Union's new measure...
+1047  UPDATE 4-Fire put out on Russian nuclear subma...  ...  .\n\n---\n\n### UPDATE 4: Fire Put Out on Russ...
+
+[1048 rows x 6 columns]
