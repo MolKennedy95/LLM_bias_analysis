@@ -1,0 +1,13 @@
+# Ignore unnecessary files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.png
+*.ipynb
+*.txt
+data/
+EconoLex_data/
+LLM_Topics/
+macro_averaged_ratios/
+micro_averaged_ratios/
