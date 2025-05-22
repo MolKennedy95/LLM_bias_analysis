@@ -1,10 +1,15 @@
-# Through the LLM Looking Glass: A Socratic Self-Assessment of Donkeys, Elephants, and Markets
+# Through the LLM Looking Glass: A Socratic Probing of Donkeys, Elephants, and Markets
 
-This repository contains the code and data associated with the paper Through the LLM Looking Glass: A Socratic Self-Assessment of Donkeys, Elephants, and Markets. The paper can be accessed at https://arxiv.org/abs/2503.16674
+This repository contains the code and data associated with the paper Through the LLM Looking Glass: A Socratic Probing of Donkeys, Elephants, and Markets. The paper can be accessed at https://arxiv.org/abs/2503.16674
 
 ## Abstract
 
-While detecting and avoiding bias in LLM-generated text is becoming increasingly important, media bias often remains subtle and subjective, making it particularly difficult to identify and mitigate. In this study, we assess media bias in LLM-generated content and LLMs’ ability to detect subtle ideological bias. We conduct this evaluation using two datasets, PoliGen and EconoLex, covering political and economic discourse, respectively. We evaluate eight widely used LLMs by prompting them to generate articles and analyze their ideological preferences via self-assessment. By using self-assessment, the study aims to directly measure the models’ biases rather than relying on external interpretations, thereby minimizing subjective judgments about media bias. Our results reveal a consistent preference of Democratic over Republican positions across all models. Conversely, in economic topics, biases vary among Western LLMs, while those developed in China lean more strongly toward socialism.
+While detecting and avoiding bias in LLM-generated text is becoming increasingly important, media bias often remains subtle and subjective, making it particularly difficult to identify
+and mitigate. In this study, we assess media bias in LLM-generated content and LLMs' ability to detect subtle ideological bias. We conduct this evaluation using two datasets, PoliGen and
+EconoLex, covering political and economic discourse, respectively. We evaluate seven widely used LLMs by prompting them to generate articles and analyze their ideological preferences via Socratic probing. 
+By using our self-contained Socratic approach, the study aims to directly measure the models' biases rather than relying on external interpretations, thereby minimizing subjective judgments about media bias. 
+Our results reveal a consistent preference of Democratic over Republican positions across all models. Conversely, in economic topics, biases vary among Western LLMs, while those developed in 
+China lean more strongly toward socialism.
 
 We publicly share all code and data in this repository.
 
